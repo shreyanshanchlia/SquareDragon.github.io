@@ -52,8 +52,18 @@
   </section>
   
   <div align="center">
-    <iframe src="footer.html" name="targetframe" frameborder="0" width=100% height="275px">
+      <iframe onload="detectIframeCompletion()" src="footer.html" name="targetframe" id="static_container"
+      class="static-container" frameborder=0 seamless="true" sandbox="allow-same-origin" style="width:100%;height:auto">
     </iframe>
   </div>
+  <script>
+    function detectIframeCompletion()
+    {
+        var elementIframe = document.getElementById("static_container");
+        //Now access the iframe document via: contentDocument > documentElement (HTML-tag) > scrollHeight
+        document.getElementById("static_container").style.height = 
+        elementIframe.contentDocument.documentElement.scrollHeight + "px";
+    }
+  </script>
 </body>
 </html>
