@@ -23,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Load header and footer with script execution
-    fetchAndInsertHtml('header.html', 'header');
-    fetchAndInsertHtml('footer.html', 'footer');
+    fetchAndInsertHtml('/header.html', 'header');
+    fetchAndInsertHtml('/footer.html', 'footer');
 });
