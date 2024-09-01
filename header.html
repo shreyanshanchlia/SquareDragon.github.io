@@ -1,0 +1,43 @@
+<head>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<header>
+  <div class = "logo">
+      <img src="/logos/SquareDragonGames100x100.png" class = "logo-img">
+      <span>Square Dragon</span>
+  </div>
+  <div>
+    <nav>
+      <div class="hamburger-menu absolute top-0 right-0 m-5">&#9776;</div> <!-- Hamburger Icon -->
+      <ul class="hidden md:flex flex-col md:flex-row">
+        <li><a href="/index.html" class="mr-5 hover:text-gray-900">Home</a></li>
+        <li><a href="/games.html" class="mr-5 hover:text-gray-900">Games</a></li>
+        <li><a href="/projects.html" class="mr-5 hover:text-gray-900">Projects</a></li>
+        <li><a href="/contact.html" class="mr-5 hover:text-gray-900">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<body>
+</body>
+<script>
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const nav = document.querySelector('nav ul');
+
+  hamburgerMenu.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+
+  document.querySelector('.hamburger-menu').addEventListener('click', () => {
+    const nav = document.querySelector('nav ul');
+    if (nav.classList.contains('hidden')) {
+      nav.classList.remove('hidden');
+      nav.classList.add('flex');
+      nav.classList.add('flex-col');
+    } else {
+      nav.classList.add('hidden');
+      nav.classList.remove('flex');
+      nav.classList.remove('flex-col');
+    }
+  });
+</script>
