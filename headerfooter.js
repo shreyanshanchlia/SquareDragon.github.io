@@ -23,6 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Load header and footer with script execution
-    fetchAndInsertHtml('/header.html', 'header');
-    fetchAndInsertHtml('/footer.html', 'footer');
+    fetchAndInsertHtml('https://shreyanshanchlia.github.io/SquareDragon.github.io/header.html', 'header');
+    fetchAndInsertHtml('https://shreyanshanchlia.github.io/SquareDragon.github.io/footer.html', 'footer');
 });
