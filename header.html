@@ -1,5 +1,5 @@
 <head>
-  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <header>
   <div class = "logo">
@@ -8,12 +8,19 @@
   </div>
   <div>
     <nav>
-      <div class="hamburger-menu absolute top-0 right-0 m-5">&#9776;</div> <!-- Hamburger Icon -->
+      <div class="hamburger-menu absolute top-0 right-4 m-5">&#9776;</div> <!-- Hamburger Icon -->
       <ul class="hidden md:flex flex-col md:flex-row">
-        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/index.html" class="mr-5 hover:text-gray-900">Home</a></li>
-        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/games.html" class="mr-5 hover:text-gray-900">Games</a></li>
-        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/projects.html" class="mr-5 hover:text-gray-900">Projects</a></li>
-        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/contact.html" class="mr-5 hover:text-gray-900">Contact</a></li>
+        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/index.html" class="mr-5 hover:text-red-600">Home</a></li>
+        <li class="relative group">
+          <a href="#" class="mr-5 hover:text-red-600">Games</a>
+          <ul class="games-dropdown absolute hidden bg-white border rounded-md py-2 w-60 group-hover:block">
+            <li><a class="px-4 py-2 text-red-600 hover:text-red-600"><b>VR Games:</b></a></li>
+            <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/games/crossbow-legends-vr.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Crossbow Legends VR</a></li>
+            <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/games/enlightenment-light-vr.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Enlightenment Light VR</a></li>
+          </ul>
+        </li>
+        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/projects.html" class="mr-5 hover:text-red-600">Projects</a></li>
+        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/contact.html" class="mr-5 hover:text-red-600">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -23,6 +30,8 @@
 <script>
   const hamburgerMenu = document.querySelector('.hamburger-menu');
   const nav = document.querySelector('nav ul');
+  const gamesToggle = document.querySelector('.games-toggle');
+  const gamesDropdown = document.querySelector('.games-dropdown');
 
   hamburgerMenu.addEventListener('click', () => {
     nav.classList.toggle('show');
@@ -40,4 +49,5 @@
       nav.classList.remove('flex-col');
     }
   });
+
 </script>

@@ -319,6 +319,28 @@ p {
 }
 
 @media (min-width: 768px) {
+    .group:hover .group-hover\:block,
+    .group-hover\:block:hover {
+      display: block;
+    }
+    .games-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .games-dropdown {
+      position: static;
+      display: none;
+      width: 100%;
+    }
+    .games-dropdown.show {
+      display: block;
+    }
+  }
+
+@media (min-width: 768px) {
     .slide img {
         width: 55%;
         margin: 0 auto;
