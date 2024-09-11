@@ -1,53 +1,87 @@
 <head>
   <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <header>
-  <div class = "logo">
-      <img src="https://shreyanshanchlia.github.io/SquareDragon.github.io/logos/SquareDragonGames100x100.png" class = "logo-img">
-      <span>Square Dragon</span>
+  <div class="logo">
+    <img src="https://shreyanshanchlia.github.io/SquareDragon.github.io/logos/SquareDragonGames100x100.png"
+      class="logo-img">
+    <span>Square Dragon</span>
   </div>
   <div>
     <nav>
-      <div class="hamburger-menu absolute top-0 right-4 m-5">&#9776;</div> <!-- Hamburger Icon -->
-      <ul class="hidden md:flex flex-col md:flex-row">
-        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/index.html" class="mr-5 hover:text-red-600">Home</a></li>
-        <li class="relative group">
-          <a href="#" class="mr-5 hover:text-red-600">Games</a>
-          <ul class="games-dropdown absolute hidden bg-white border rounded-md py-2 w-60 group-hover:block">
-            <li><a class="px-4 py-2 text-red-600 hover:text-red-600"><b>VR Games:</b></a></li>
-            <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/games/crossbow-legends-vr.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Crossbow Legends VR</a></li>
-            <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/games/enlightenment-light-vr.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-red-600">Enlightenment Light VR</a></li>
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo">
+          <img src="https://shreyanshanchlia.github.io/SquareDragon.github.io/logos/SquareDragonGames100x100.png"
+            class="logo-img"><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/index.html">Square
+            Dragon</a>
+        </div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">Square Dragon</span>
+            <i class='bx bx-x'></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">Games<i class='bx bxs-chevron-down games-arrow arrow'></i></a>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <!-- <li><a href="#">Web Design</a></li> -->
+                <li class="more">
+                  <span><a href="#">VR Games<i class='bx bxs-chevron-right arrow more-arrow'></i></a>
+                  </span>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/games/crossbow-legends-vr.html">Crossbow Legends VR</a></li>
+                    <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/games/enlightenment-light-vr.html">Enlightenment Light VR</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/projects.html">Projects<i class='bx bxs-chevron-down js-arrow arrow '></i></a>
+              <ul class="js-sub-menu sub-menu">
+                <!-- <li><a href="#">Dynamic Clock</a></li> -->
+              </ul>
+            </li>
+            <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/contact.html">About</a></li>
           </ul>
-        </li>
-        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/projects.html" class="mr-5 hover:text-red-600">Projects</a></li>
-        <li><a href="https://shreyanshanchlia.github.io/SquareDragon.github.io/contact.html" class="mr-5 hover:text-red-600">Contact</a></li>
-      </ul>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
+
 <body>
 </body>
 <script>
-  const hamburgerMenu = document.querySelector('.hamburger-menu');
-  const nav = document.querySelector('nav ul');
-  const gamesToggle = document.querySelector('.games-toggle');
-  const gamesDropdown = document.querySelector('.games-dropdown');
+  // search-box open close js code
+  let navbar = document.querySelector(".navbar");
 
-  hamburgerMenu.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
+  // sidebar open close js code
+  let navLinks = document.querySelector(".nav-links");
+  let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+  let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+  menuOpenBtn.onclick = function () {
+    navLinks.style.left = "0";
+  }
+  menuCloseBtn.onclick = function () {
+    navLinks.style.left = "-100%";
+  }
 
-  document.querySelector('.hamburger-menu').addEventListener('click', () => {
-    const nav = document.querySelector('nav ul');
-    if (nav.classList.contains('hidden')) {
-      nav.classList.remove('hidden');
-      nav.classList.add('flex');
-      nav.classList.add('flex-col');
-    } else {
-      nav.classList.add('hidden');
-      nav.classList.remove('flex');
-      nav.classList.remove('flex-col');
-    }
-  });
 
+  // sidebar submenu open close js code
+  let htmlcssArrow = document.querySelector(".games-arrow");
+  htmlcssArrow.onclick = function () {
+    navLinks.classList.toggle("show1");
+  }
+  let moreArrow = document.querySelector(".more-arrow");
+  moreArrow.onclick = function () {
+    navLinks.classList.toggle("show2");
+  }
+  let jsArrow = document.querySelector(".js-arrow");
+  jsArrow.onclick = function () {
+    navLinks.classList.toggle("show3");
+  }
 </script>
