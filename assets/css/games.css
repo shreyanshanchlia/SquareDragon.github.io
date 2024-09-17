@@ -1,0 +1,39 @@
+[data-bs-theme=dark] .moving-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(to right, rgba(235,204,207,0.081) 1px, transparent 1px), linear-gradient(to bottom, rgba(235,204,207,0.09) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: moveGrid 20s linear infinite;
+  z-index: -10;
+}
+
+[data-bs-theme=light] .moving-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.081) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.09) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: moveGrid 20s linear infinite;
+  z-index: -10;
+}
+
+@keyframes moveGrid {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1200px) {
+  #display-slide-image {
+    width: 55%;
+  }
+}
+
