@@ -461,7 +461,7 @@ p {
 }
 
 
-/* Navbar 
+/* Navbar */
 header {
     display: flex;
     justify-content: space-between;
@@ -471,7 +471,7 @@ header {
     width: 100%;
     margin: auto;
     top: 0;
-    z-index: 999;  
+    z-index: 999;
 }
 
 .logo {
@@ -686,7 +686,7 @@ nav .navbar .links li:hover .js-sub-menu {
     line-height: 40px;
     text-align: center;
     font-size: 22px;
-    color: #fff;
+    color: var(--muted-red);
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -698,7 +698,7 @@ nav .navbar .links li:hover .js-sub-menu {
     top: 80px;
     height: 60px;
     width: 300px;
-    background: #3E8DA8;
+    background: var(--muted-red);
     border-radius: 6px;
     opacity: 0;
     pointer-events: none;
@@ -709,7 +709,7 @@ nav .navbar .links li:hover .js-sub-menu {
     top: 65px;
     opacity: 1;
     pointer-events: auto;
-    background: #3E8DA8;
+    background: var(--muted-red);
 }
 
 .search-box .input-box::before {
@@ -717,7 +717,7 @@ nav .navbar .links li:hover .js-sub-menu {
     position: absolute;
     height: 20px;
     width: 20px;
-    background: #3E8DA8;
+    background: var(--muted-red);
     right: 10px;
     top: -6px;
     transform: rotate(45deg);
@@ -742,6 +742,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .navbar .bx-menu {
+    color: var(--black);
     display: none;
 }
 
@@ -767,12 +768,14 @@ nav .navbar .links li:hover .js-sub-menu {
 
 @media (max-width:800px) {
     nav {
+        
         /* position: relative; */
     }
-
-    .navbar .bx-menu {
+   
+    /* .navbar .bx-menu {
+        color: black;
         display: block;
-    }
+    } */
 
     nav .navbar .nav-links {
         position: fixed;
@@ -781,7 +784,7 @@ nav .navbar .links li:hover .js-sub-menu {
         display: block;
         max-width: 270px;
         width: 100%;
-        background: #3E8DA8;
+        background: var(--muted-red);
         line-height: 40px;
         padding: 20px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -797,18 +800,19 @@ nav .navbar .links li:hover .js-sub-menu {
 
     .sidebar-logo .logo-name {
         font-size: 25px;
-        color: #fff;
+        color: black;
     }
 
     .sidebar-logo i,
     .navbar .bx-menu {
         font-size: 25px;
-        color: #fff;
+        color: var(--black);
     }
 
     nav .navbar .links {
         display: block;
         margin-top: 20px;
+        color: var(--muted-red);
     }
 
     nav .navbar .links li .arrow {
@@ -816,6 +820,7 @@ nav .navbar .links li:hover .js-sub-menu {
     }
 
     nav .navbar .links li {
+        color: var(--muted-red);
         display: block;
     }
 
@@ -858,18 +863,28 @@ nav .navbar .links li:hover .js-sub-menu {
         /* justify-content: space-between; */
     }
 
+
     .links li .sub-menu .more:hover .more-sub-menu {
+        color: var(--muted-red);
         display: none;
     }
 
     nav .navbar .links li:hover .htmlCss-sub-menu,
     nav .navbar .links li:hover .js-sub-menu {
+        color:var(--muted-red);
         display: none;
+    }
+
+    .navbar .nav-links.show1 ,
+    .navbar .nav-links.show2 ,
+    {
+        background-color: var(--muted-red);
     }
 
     .navbar .nav-links.show1 .links .htmlCss-sub-menu,
     .navbar .nav-links.show3 .links .js-sub-menu,
     .navbar .nav-links.show2 .links .more .more-sub-menu {
+        color: var(--muted-red);
         display: block;
     }
 
@@ -881,10 +896,15 @@ nav .navbar .links li:hover .js-sub-menu {
     .navbar .nav-links.show2 .links .more-arrow {
         transform: rotate(90deg);
     }
-}
-
-@media (max-width:370px) {
-    nav .navbar .nav-links {
-        max-width: 100%;
+    @media (max-width: 768px) {
+        nav .navbar .nav-links {
+            background-color: var(--muted-red); /* Change this to your desired color */
+        }
+    }
+    @media (max-width: 370px) {
+        nav .navbar .nav-links {
+            max-width: 100%;
+            background-color: var(--muted-red);
+        }
     }
 }
