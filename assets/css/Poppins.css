@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Poppins';
-	src: url(/assets/fonts/Poppins-ff298a8d30dfb26bde7810bdf73a45c2.woff2) format('woff2');
+	src: url(../../assets/fonts/Poppins-ff298a8d30dfb26bde7810bdf73a45c2.woff2) format('woff2');
 	font-weight: 400;
 	font-style: normal;
 	font-display: auto;
@@ -9,7 +9,7 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url(/assets/fonts/Poppins-808a7fadde2803377986dfbbb8700b6a.woff2) format('woff2');
+	src: url(../../assets/fonts/Poppins-808a7fadde2803377986dfbbb8700b6a.woff2) format('woff2');
 	font-weight: 400;
 	font-style: normal;
 	font-display: auto;
@@ -18,7 +18,7 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url(/assets/fonts/Poppins-ef135d0de86ba8c8b295cc385739fc51.woff2) format('woff2');
+	src: url(../../assets/fonts/Poppins-ef135d0de86ba8c8b295cc385739fc51.woff2) format('woff2');
 	font-weight: 500;
 	font-style: normal;
 	font-display: auto;
@@ -27,7 +27,7 @@
 
 @font-face {
 	font-family: 'Poppins';
-	src: url(/assets/fonts/Poppins-3d4504fc5fcc830d255669197b50b940.woff2) format('woff2');
+	src: url(../../assets/fonts/Poppins-3d4504fc5fcc830d255669197b50b940.woff2) format('woff2');
 	font-weight: 500;
 	font-style: normal;
 	font-display: auto;
