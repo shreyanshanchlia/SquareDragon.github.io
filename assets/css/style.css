@@ -7,7 +7,7 @@
 }
 
 .jumbotron-main.jumbotron.jumbotron-fluid {
-  z-index: -1;
+  z-index: 0;
 }
 
 #particles-js {
