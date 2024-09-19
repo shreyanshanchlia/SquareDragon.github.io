@@ -96,6 +96,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Poppins.css">
     <link rel="stylesheet" href="assets/css/Source%20Sans%20Pro.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/Bold-BS4-Jumbotron-with-Particles-js-particles-js.css">
     <link rel="stylesheet" href="assets/css/Bold-BS4-Jumbotron-with-Particles-js.css">
@@ -126,7 +128,7 @@
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Projects</a>
                         <div class="dropdown-menu"><a class="dropdown-item" href="https://github.com/shreyanshanchlia" target="_blank">GitHub</a></div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
                     <li class="theme-switcher nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" id="theme-switcher" href="#" style="padding-right: 80px;width: 160px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-sun-fill mb-1">
                                 <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
                             </svg></a>
@@ -149,58 +151,28 @@
         <div class="grid-cell"></div>
         <div class="grid-cell"></div>
     </div>
-    <div class="container d-lg-flex justify-content-lg-center align-items-lg-center" style="height: 120px;color: var(--bs-primary);">
-        <h1 class="text-uppercase" style="text-align: center;">Unlock Me</h1>
-    </div>
-    <div class="container" id="display-slide-image" style="height: 55%;">
-        <div class="carousel slide" data-bs-ride="carousel" id="carousel-1" style="height: 100%;">
-            <div class="carousel-inner d-xxl-flex m-auto" style="height: 100%;">
-                <div class="carousel-item active" style="text-align: center;height: 100%;">
-                    <div style="height: 100%;"><img src="https://play-lh.googleusercontent.com/poo4uG94MJ3Eol0eeArE8JKb29TxwyWMvoJzA1MVV-7qPDWJQwWDmhhDj7tXNkHa5yg=w2560-h1440-rw" alt="Slide Image" style="height: 100%;"></div>
-                </div>
-                <div class="carousel-item" style="text-align: center;height: 100%;">
-                    <div style="height: 100%;"><img src="https://play-lh.googleusercontent.com/vOBq-dzyZd1TGo4GF6SVgrB6XxUByhwFtL9_dqNzJOn7BfCX3Ru7zhdCCTxGPnIV3zs=w2560-h1440-rw" alt="Slide Image" style="height: 100%;"></div>
-                </div>
-                <div class="carousel-item" style="text-align: center;height: 100%;">
-                    <div style="height: 100%;"><img src="https://play-lh.googleusercontent.com/nZbQIDS6G4BKVmXRWltetCebrOlAMAenvSY2hNSJ8L64Xw7ECnqsXIg-qdRVom-s_BU=w2560-h1440-rw" alt="Slide Image" style="height: 100%;"></div>
-                </div>
-                <div class="carousel-item" style="text-align: center;height: 100%;">
-                    <div style="height: 100%;"><img src="https://play-lh.googleusercontent.com/kb9iWqc9-X8LgyadUX9yfmBCi7Q6ITsZJ6J-nnbVwtiP1TqLxpDRD2njhMHRfHBB7A3s=w2560-h1440-rw" alt="Slide Image" style="height: 100%;"></div>
-                </div>
-                <div class="carousel-item" style="text-align: center;height: 100%;">
-                    <div style="height: 100%;"><img src="https://play-lh.googleusercontent.com/dKK_1rf_SgyD-X-K6NqXFRwBh2iEVqiZIETgSCQUHTYXgQO8G6gaqLJVHx2ZJWYOOQ=w2560-h1440-rw" alt="Slide Image" style="height: 100%;"></div>
+    <div id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Team</h1>
+                    <h2>Game Developer</h2>
+                    <hr>
                 </div>
             </div>
-            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-            <div class="carousel-indicators"><button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="3"></button> <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="4"></button></div>
-        </div>
-    </div>
-    <div class="container">
-        <section class="text-center m-auto" style="padding: 10px;position: sticky;display: block;"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.Shreyansh.UnlockMe"><img class="d-block d-md-inline" src="assets/img/google-play-badge.svg" width="200px" style="padding: 0px;margin: 5px;"></a></section>
-    </div>
-    <div class="container d-lg-flex m-auto" style="margin: 12.8px;">
-        <div class="accordion flex-grow-1" role="tablist" id="accordion-1">
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1"><strong>About</strong></button></h2>
-                <div class="accordion-collapse collapse show item-1" role="tabpanel">
-                    <div class="accordion-body">
-                        <p class="mb-0">Act like a policeman, and catch people breaking lockdown protocols during COVID-19 pandemic. Do not come in contact with virus or you will loose health.<br>Research and solve questions to unlock a new mode by completing the cure. This&nbsp;game has analytics at each section of the game and was used in the development of the research paper: <a href="https://www.sciencedirect.com/science/article/pii/S1071581922000477" target="_blank">Unlock Me: A Real-World Driven Smartphone Game to Stimulate COVID-19 Awareness</a>.<br>This game has been featured in multiple news and articles as a Covid-19 learning app.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2"><strong>Info</strong></button></h2>
-                <div class="accordion-collapse collapse item-2" role="tabpanel">
-                    <div class="accordion-body">
-                        <p class="mb-0"><strong>Genre: </strong>Arcade, Educational<br><strong>Development Platform:</strong> Unity3D<br><strong>Release Date: </strong>Jun 21, 2020<br><strong>Platform:</strong> Android<br><strong>Tags:</strong>&nbsp;Arcade, Informative, Educational, COVID-19, lockdown, Unique, Beautiful, Top Down, Level based<br><strong>Skills:</strong> Unity3D, C#, Research, Particle System, UI/UX, Analytics, Cloud Config, Data Analysis</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3"><strong>Privacy Policy</strong></button></h2>
-                <div class="accordion-collapse collapse item-3" role="tabpanel">
-                    <div class="accordion-body">
-                        <p class="mb-0">Welcome! We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use this game ("software").<br><br>By downloading, accessing, or using the software, you agree to the terms of this Privacy Policy. If you do not agree with the terms, please do not download, access, or use the software.<br><br>This game shows COVID-19 and some of the precautions / lockdown protocols which may or may not be up to date but during the time of launch was written to the best of our knowledge as a measure of teaching and assessments of college students.&nbsp;<br><br>Basic integration of Unity Analytics might be present which collects usage statistics. This data is used to know the number of daily active users, how many people reached a certain high score, which game mode is preferred and other similar information. This data is only used to help improve games. The same tools are also used to get performance reports so we can track and resolve game crashes and errors. Read more at https://unity.com/legal/privacy-policy<br><br>We may collect the following types of personal information from you, whenever these feature/s are used:<br>Contact Information: Such as your name and email address when you create an account or contact us for support.<br>Profile Information: Information you provide when setting up your user profile, including your username and avatar.<br>Device Information: Information about the device you use to access the Game, including the device model, operating system, and unique device identifiers.<br><br>We may use the information we collect for the following purposes:<br>To Provide and Improve the Game: To operate and maintain the Game, improve gameplay experience, and develop new features.<br>To Research: To research and understand human behavior in educational learning games for social awareness.<br>To Personalize Your Experience: To customize your gameplay experience based on your preferences and usage.<br>To Ensure Security: To protect against and prevent fraud, unauthorized access, and other security issues.<br>To Comply with Legal Obligations: To comply with applicable laws, regulations, and legal processes.<br><br>We do not sell, trade, or otherwise transfer your personal information to outside parties, except in the following circumstances:<br>Service Providers: We may share your information with third-party service providers who assist us in operating the Game, such as cloud storage providers and analytics services.<br>Legal Requirements: We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court or government agency).<br>Business Transfers: In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction.<br><br>We may update this Privacy Policy from time to time with or without notice, but shall be linked to the page where the app is downloaded from. If you have any questions or concerns about our Privacy Policy, please contact us at shreyansh.develop@gmail.com.<br><br></p>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card" style="padding-top: 32px;text-align: center;"><img class="rounded-circle card-img-top w-100 d-block" src="https://avatars.githubusercontent.com/u/48558967?v=4" style="padding: 25px;">
+                        <div class="caption">
+                            <h3>Shreyansh Anchlia</h3>
+                            <p class="text-uppercase">Unity Developer</p>
+                            <p>I cook games.</p>
+                            <hr>
+                            <p><i class="fa fa-envelope"></i><a href="mailto:shreyanshanchlia@gmail.com">&nbsp;shreyanshanchlia@gmail.com</a></p>
+                            <hr>
+                            <p style="margin-bottom: 0px;color: var(--bs-body-color);" href="https://drive.google.com/file/d/1-t5-Hwhzru3hSYcYB20Juvb29vbvamKe/view?usp=sharing"><em>Resume</em></p>
+                            <p><a target="_blank" style="padding: 4px;margin: -4px;" href="https://drive.google.com/file/d/1-t5-Hwhzru3hSYcYB20Juvb29vbvamKe/view?usp=sharing"></a><a href="twitter" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="https://www.linkedin.com/in/shreyansh-anchlia/" target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="https://github.com/shreyanshanchlia" target="_blank"><i class="icon ion-social-github"></i></a></p>
+                        </div>
                     </div>
                 </div>
             </div>
